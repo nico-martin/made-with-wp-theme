@@ -1,0 +1,26 @@
+{
+  "name": "madewithwp",
+  "version": "0.1.0",
+  "description": "WordPress theme for madewithwp.ch",
+  "homepage": "https://www.claudioschwarz.com",
+  "author": {
+    "name": "Claudio Schwarz",
+    "url": "https://www.claudioschwarz.com"
+  },
+  "license": "GNU GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/purzlbaum/made-with-wp-theme"
+  },
+  "devDependencies": {
+    "bower": "1.8.0",
+    "grunt": "1.0.1",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-uglify": "2.2.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-sass": "2.0.0"
+  },
+  "dependencies": {
+    "lodash": "4.17.4"
+  }
+}
