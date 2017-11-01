@@ -8,7 +8,7 @@
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Rubik:700" rel="stylesheet">
 
         <?php wp_head(); ?>
     </head>

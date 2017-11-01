@@ -1,0 +1,126 @@
+.gf_page_steps
+  margin-bottom: 2rem
+
+.gf_step
+  display: block
+  margin-top: 1rem
+
+  @include small
+    margin-top: 0
+    margin-left: 2rem
+    display: inline-block
+
+  &_first
+    margin-top: 0
+    margin-left: 0
+
+.gf_step_number
+  border-radius: 50%
+  background: $gray-1
+  color: $white
+  position: relative
+  top: -0.3125rem
+  padding: 0.125rem 0.5rem 0.25rem
+  @include font-size($small-font-sizes)
+
+  .gf_step_active &
+    background: $orange-1
+
+.gf_step_label
+  color: $gray-1
+
+  .gf_step_active &
+    color: $orange-1
+
+.gform_fields
+  padding: 0
+  margin: 0
+  list-style: none
+
+.gfield
+  margin-bottom: 2rem
+  position: relative
+  @include clearfix
+
+.gfield_label
+  display: block
+  width: 100%
+  margin-bottom: 0.25rem
+  text-transform: uppercase
+  @include font-size($regular-font-sizes)
+
+  @include medium
+    margin-top: 1rem
+    width: 20rem
+    float: left
+    text-transform: inherit
+
+.ginput_container
+  width: 100%
+
+  @include medium
+    float: left
+    width: calc(100% - 20rem)
+
+  input
+    width: 100%
+    padding: 1rem
+    box-sizing: border-box
+    border: 1px solid $gray-2
+    @include font-size($regular-font-sizes)
+
+.gfield_checkbox,
+.gfield_radio
+  list-style: none
+  margin: 0.5rem 0 0
+  padding: 0
+  @include clearfix
+
+  @include medium
+    margin-top: 1rem
+
+  li
+    margin-top: 1rem
+
+    @include large
+      float: left
+      width: 33%
+
+    &:first-child
+      margin-top: 0
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3)
+      @include large
+        margin-top: 0
+
+
+  input
+    display: none
+
+    &:checked
+      + label
+        &:before
+          background: $orange-1
+
+  label
+    cursor: pointer
+    @include clearfix
+
+    &:before
+      margin-top: 5px
+      float: left
+      content: ""
+      width: 25px
+      height: 25px
+      margin-right: 0.625rem
+      background: $gray-2
+      border-radius: 50%
+      display: block
+      border: 7px solid $gray-2
+
+.gfield_checkbox
+  label
+    &:before
+      border-radius: 0

@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
+					'assets/js/plugins/*',
 					'assets/js/functions.js'
 				],
 				dest: 'assets/js/compiled/theme.js'

@@ -10,7 +10,8 @@ content/uploads/
 content/wp-cache-config.php
 content/plugins/hello.php
 
-bower/*
+assets/bower/*
+assets/dist/*
 node_modules/*
 
 /.htaccess
