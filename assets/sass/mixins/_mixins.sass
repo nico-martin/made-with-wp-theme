@@ -9,3 +9,10 @@
 @mixin large
   @include media-breakpoint-up(lg)
     @content
+
+@mixin transform($args...)
+  -webkit-transform: $args
+  -moz-transform: $args
+  -ms-transform: $args
+  -o-transform: $args
+  transform: $args

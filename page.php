@@ -5,7 +5,7 @@
                 <div class="row">
 	                <?php while (have_posts()) : ?>
 		                <?php the_post(); ?>
-                        <?php get_template_part('template-parts/index/content'); ?>
+                        <?php get_template_part('template-parts/page/content'); ?>
 	                <?php endwhile; ?>
                 </div>
             </div>

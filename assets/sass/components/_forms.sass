@@ -24,13 +24,13 @@
   @include font-size($small-font-sizes)
 
   .gf_step_active &
-    background: $orange-1
+    background: $red-1
 
 .gf_step_label
   color: $gray-1
 
   .gf_step_active &
-    color: $orange-1
+    color: $red-1
 
 .gform_fields
   padding: 0
@@ -66,7 +66,7 @@
     width: 100%
     padding: 1rem
     box-sizing: border-box
-    border: 1px solid $gray-2
+    border: 1px solid $black
     @include font-size($regular-font-sizes)
 
 .gfield_checkbox,
@@ -102,7 +102,7 @@
     &:checked
       + label
         &:before
-          background: $orange-1
+          background: $red-1
 
   label
     cursor: pointer
@@ -115,10 +115,10 @@
       width: 25px
       height: 25px
       margin-right: 0.625rem
-      background: $gray-2
+      background: $black
       border-radius: 50%
       display: block
-      border: 7px solid $gray-2
+      border: 7px solid $black
 
 .gfield_checkbox
   label

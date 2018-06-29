@@ -1,6 +1,10 @@
+html
+  font-size: 10px
+
 body
   font-family: 'Lato', sans-serif
   font-weight: 400
+  background: $gray-1
   @include font-size($regular-font-sizes)
 
 img
@@ -15,10 +19,20 @@ h4,
 h5,
 h6
   font-family: 'Rubik', sans-serif
-  font-weight: 700
+  font-weight: 500
+
+h2
+  font-size: 20px
 
 p
   margin: 0 0 1.5rem
 
   &:last-of-type
     margin: 0
+
+a
+  color: $red-1
+
+  &:focus,
+  &:hover
+    color: $red-1
