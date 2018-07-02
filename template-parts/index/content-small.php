@@ -9,12 +9,12 @@
 			<div class="site__quicklinks">
 				<a href="<?php the_field( 'website_url' ); ?>" class="site__link site__link--outgoing">
                     <span class="site__icon">
-                        <?php get_template_part( 'template-parts/icons/content', 'browser' ); ?>
+                        <?php get_template_part( 'template-parts/icons/content', 'external-link' ); ?>
                     </span>
 				</a>
 				<a href="<?php the_permalink(); ?>" class="site__link site__link--detail">
                     <span class="site__icon">
-                        <?php get_template_part( 'template-parts/icons/content', 'detail' ); ?>
+                        <?php get_template_part( 'template-parts/icons/content', 'info' ); ?>
                     </span>
 				</a>
 			</div>
