@@ -18,26 +18,29 @@
  */
 function wp_madewithwp_load_javascript() {
 
-    /*
-     * Registers the minified JS
-     */
-    wp_register_script(
-        'wp-minified-js',
-        get_template_directory_uri() . '/assets/dist/theme.min.js',
-        null,
-        false,
-        true
-    );
+	/*
+	 * Registers the minified JS
+	 */
+	wp_register_script(
+		'wp-minified-js',
+		get_template_directory_uri() . '/assets/dist/theme.min.js',
+		array(
+			'jquery'
+		),
+		false,
+		true
+	);
 
-    // Enable threaded comments
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-        wp_enqueue_script( 'comment-reply' );
-    }
+	// Enable threaded comments
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 
-    /*
-     * Loads our minified JS
-     */
-    wp_enqueue_script( 'wp-minified-js' );
+	/*
+	 * Loads our minified JS
+	 */
+	wp_enqueue_script( 'wp-minified-js' );
 
 }
+
 add_action( 'wp_enqueue_scripts', 'wp_madewithwp_load_javascript' );

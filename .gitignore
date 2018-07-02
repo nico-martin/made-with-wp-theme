@@ -13,6 +13,7 @@ content/plugins/hello.php
 assets/bower/*
 assets/dist/*
 node_modules/*
+package-lock.json
 
 /.htaccess
 /license.txt

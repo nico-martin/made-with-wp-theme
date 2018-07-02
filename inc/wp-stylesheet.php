@@ -16,24 +16,23 @@
  *
  * @return void
  */
-function wp_madewithwp_load_stylesheet()
-{
+function wp_madewithwp_load_stylesheet() {
 
-    /*
-     * Registers the minified CSS
-     */
-    wp_register_style(
-        'wp-minified-css', //handle
-        get_template_directory_uri() . '/assets/dist/default.min.css',
-        null,   // no dependencies
-        false //version
-    );
+	/*
+	 * Registers the minified CSS
+	 */
+	wp_register_style(
+		'wp-minified-css', //handle
+		get_template_directory_uri() . '/assets/dist/default.min.css',
+		null,   // no dependencies
+		false //version
+	);
 
-    /*
-     * Loads our minified CSS
-     */
-    wp_enqueue_style('wp-minified-css');
+	/*
+	 * Loads our minified CSS
+	 */
+	wp_enqueue_style( 'wp-minified-css' );
 
 }
 
-add_action('wp_enqueue_scripts', 'wp_madewithwp_load_stylesheet');
+add_action( 'wp_enqueue_scripts', 'wp_madewithwp_load_stylesheet' );
